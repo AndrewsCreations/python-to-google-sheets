@@ -1,0 +1,35 @@
+Basic boiler plate template code for integrating google sheets with python.
+
+Steps to set up
+- Create a google cloud project
+  - https://developers.google.com/workspace/guides/create-project
+  - Click on Go to Create a Project
+  - Name the project and click create
+- Enamble Sheets APIs for the project
+  - On the left hand task bar click on APIs & Services
+  - Under Enabled APIs & Services click on the plus sign that says enable apis and services
+  - In the search bar type sheets and click on the Google Sheets API
+  - Click Enable
+ - Create OAuth users
+   - Click on OAuth consent screen on the left
+   - Choose External and hit create
+   - Fill out required field with the email you want to use
+   - Click save and continue
+   - Click add or remove scopes
+   - Type in sheets in the search bar
+   - Choose the /auth/spreadhseets Google sheets api
+   - Click update
+   - Click save and continue
+   - Click add users
+   - Enter the email you want associated with that user
+   - Click save and continue
+  - Create Credentials
+    - Click Credentials on the left task bar
+    - Click the plus sign that says create credentials
+    - Choose OAuth client ID
+    - Pick Desktop app (Or whatever your app is)
+    - Click create
+    - Click on download json
+    - Move that downloaded file to your repo
+    - Rename the file to credentials.json (only necessary to get the boiler plate code working)
+  - The boiler plate code should now work! Make sure to use the write spreadsheet id
